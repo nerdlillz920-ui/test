@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom & Bolt | Eco-Friendly Floral Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #fdfcf8; color: #1a2e26; }
+        .serif { font-family: 'Playfair Display', serif; }
+        
+        /* The Watermark requested in previous turn */
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-30deg);
+            font-size: 12vw;
+            font-weight: 900;
+            color: rgba(26, 46, 38, 0.04);
+            z-index: 1000;
+            pointer-events: none;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .hero-bg {
+            background: linear-gradient(rgba(26, 46, 38, 0.4), rgba(26, 46, 38, 0.4)), 
+            url('https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .btn-gold {
+            background-color: #c5a059;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-gold:hover {
+            background-color: #a88746;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="watermark">SAMPLE</div>
+
+    <!-- Top Navigation -->
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-emerald-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="serif text-2xl font-black tracking-tighter text-emerald-900">BLOOM & BOLT</div>
+            <div class="hidden md:flex gap-10 text-xs font-bold uppercase tracking-widest text-emerald-900/70">
+                <a href="#concept" class="hover:text-emerald-600 transition">The Concept</a>
+                <a href="#collections" class="hover:text-emerald-600 transition">Collections</a>
+                <a href="#delivery" class="hover:text-emerald-600 transition">Delivery</a>
+            </div>
+            <a href="#" class="btn-gold px-6 py-2 rounded-full text-xs font-bold uppercase tracking-tighter">Shop Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg h-[90vh] flex items-center justify-center text-center text-white px-6">
+        <div class="max-w-4xl">
+            <span class="text-sm font-bold uppercase tracking-[0.4em] mb-6 block">Carbon Neutral Floral Design</span>
+            <h1 class="serif text-6xl md:text-8xl italic mb-8">Naturally Chic. <br>Honestly Delivered.</h1>
+            <p class="text-lg md:text-xl font-light mb-10 opacity-90 max-w-2xl mx-auto">Luxury arrangements sourced from local regenerative farms and delivered via our custom electric fleet.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <button class="btn-gold px-10 py-4 rounded-full font-bold uppercase text-sm tracking-widest">Explore Summer Collection</button>
+                <button class="bg-white/10 backdrop-blur-md border border-white/30 px-10 py-4 rounded-full font-bold uppercase text-sm tracking-widest hover:bg-white/20 transition">Our Sustainability Mission</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Concept Section -->
+    <section id="concept" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+            <div>
+                <img src="https://images.unsplash.com/photo-1533616688419-b7a585564566?q=80&w=1000" alt="Electric Bike Delivery" class="rounded-2xl shadow-2xl">
+            </div>
+            <div>
+                <h2 class="serif text-5xl mb-8 text-emerald-950">Luxury without <br><span class="italic text-emerald-700 font-normal">The Footprint.</span></h2>
+                <p class="text-lg text-emerald-900/60 leading-relaxed mb-8">
+                    We believe beauty shouldn't cost the Earth. Bloom & Bolt was founded on the principle that the floral industry needs a revolution. No plastic wraps, no chemically-treated imported stems, and absolutely zero diesel exhaust.
+                </p>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-emerald-100 flex items-center justify-center rounded-full text-emerald-700">⚡</div>
+                        <div>
+                            <h4 class="font-bold text-emerald-900">Electric Bolt Delivery</h4>
+                            <p class="text-sm text-emerald-900/50">Guaranteed silent, zero-emission delivery across the city center.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-emerald-100 flex items-center justify-center rounded-full text-emerald-700">🌿</div>
+                        <div>
+                            <h4 class="font-bold text-emerald-900">Sustainably Sourced</h4>
+                            <p class="text-sm text-emerald-900/50">100% of our blooms are seasonally cut from regenerative farms within 50 miles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Grid -->
+    <section id="collections" class="py-24 bg-emerald-950 text-white rounded-t-[60px]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-16">
+                <div>
+                    <h3 class="serif text-5xl italic">Seasonal Drops</h3>
+                    <p class="text-emerald-400 mt-2">Available for a limited time.</p>
+                </div>
+                <a href="#" class="text-xs font-bold uppercase tracking-widest border-b border-emerald-400 pb-2">View All Styles</a>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-2xl mb-6">
+                        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=1000" class="group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h4 class="serif text-2xl mb-2">The Wild Solstice</h4>
+                    <p class="text-emerald-400/70 text-sm mb-4">Dahlias, Cosmos, and Wild Mint</p>
+                    <span class="text-xl font-light">$85</span>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-2xl mb-6">
+                        <img src="https://images.unsplash.com/photo-1523694553227-ec1c4669772c?q=80&w=1000" class="group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h4 class="serif text-2xl mb-2">Morning Dew Minimal</h4>
+                    <p class="text-emerald-400/70 text-sm mb-4">Local Peonies and Eucalyptus</p>
+                    <span class="text-xl font-light">$65</span>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-2xl mb-6">
+                        <img src="https://images.unsplash.com/photo-1453904300235-0f2f60b15b5d?q=80&w=1000" class="group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h4 class="serif text-2xl mb-2">Bolt Subscription</h4>
+                    <p class="text-emerald-400/70 text-sm mb-4">Fresh weekly surprises for your home</p>
+                    <span class="text-xl font-light">From $45/wk</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 bg-white border-t border-emerald-50 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 text-emerald-950/40 text-sm uppercase tracking-widest font-bold">
+            <div class="md:col-span-1">
+                <div class="serif text-2xl font-black text-emerald-900 mb-6">BLOOM & BOLT</div>
+                <p class="normal-case font-normal text-emerald-900/60 italic">Sustainable floral design for the modern era.</p>
+            </div>
+            <div>
+                <h5 class="text-emerald-900 mb-6">Studio</h5>
+                <p class="normal-case font-medium mb-2">452 Green Ave</p>
+                <p class="normal-case font-medium">Portland, OR 97201</p>
+            </div>
+            <div>
+                <h5 class="text-emerald-900 mb-6">Connect</h5>
+                <p class="normal-case font-medium mb-2">Instagram</p>
+                <p class="normal-case font-medium">LinkedIn</p>
+            </div>
+            <div>
+                <h5 class="text-emerald-900 mb-6">Contact</h5>
+                <p class="normal-case font-medium mb-2">hello@bloomandbolt.com</p>
+                <p class="normal-case font-medium">(555) ECO-FLOW</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-emerald-50 text-[10px] text-center text-emerald-900/20">
+            © 2024 BLOOM & BOLT STUDIOS • PROUDLY CARBON NEUTRAL • SAMPLE WEBSITE LAYOUT
+        </div>
+    </footer>
+
+</body>
+</html>
